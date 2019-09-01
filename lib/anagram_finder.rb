@@ -1,3 +1,3 @@
 def anagram_finder(word, words)
-  words
+  words[0].split
 end
