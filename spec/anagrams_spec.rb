@@ -9,7 +9,11 @@ describe '.anagram_finder' do
     expect(anagram_finder('a', ['a', 'b'])).to eq(['a'])
   end
 
-  it 'finds words with more than one letter which are anagrams' do
+  it 'finds word with more than one letter which are anagrams' do
     expect(anagram_finder('abba', ['aacd', 'aabb'])).to eq(['aabb'])
+  end
+
+  it 'finds several words that are anagrams' do
+    expect(anagram_finder('abba', ['aabb', 'abcd', 'bbaa', 'dada'])).to eq(['aabb', 'bbaa'])
   end
 end
